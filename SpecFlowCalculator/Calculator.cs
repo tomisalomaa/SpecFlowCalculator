@@ -21,5 +21,10 @@ namespace SpecFlowCalculator
         {
             return FirstNumber / SecondNumber;
         }
+
+        public double Product()
+        {
+            return FirstNumber * SecondNumber;
+        }
     }
 }

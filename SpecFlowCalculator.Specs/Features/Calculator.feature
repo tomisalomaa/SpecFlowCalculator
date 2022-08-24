@@ -25,3 +25,10 @@ Scenario: Divide two numbers
 	And the second number is 2
 	When the two numbers are divided
 	Then the result should be 7.5
+
+@multiply
+Scenario: Multiply two numbers
+	Given the first number is 2.25
+	And the second number is 2
+	When the two numbers are multiplied
+	Then the result should be 4.5
