@@ -4,17 +4,22 @@ namespace SpecFlowCalculator
 {
     public class Calculator
     {
-        public int FirstNumber { get; set; }
-        public int SecondNumber { get; set; }
+        public double FirstNumber { get; set; }
+        public double SecondNumber { get; set; }
 
-        public int Add()
+        public double Add()
         {
             return FirstNumber + SecondNumber;
         }
 
-        public int Subtract()
+        public double Subtract()
         {
             return FirstNumber - SecondNumber;
+        }
+
+        public double Divide()
+        {
+            return FirstNumber / SecondNumber;
         }
     }
 }

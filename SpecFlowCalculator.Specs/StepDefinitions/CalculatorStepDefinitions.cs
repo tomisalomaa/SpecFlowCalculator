@@ -5,16 +5,16 @@ namespace SpecFlowCalculator.Specs.StepDefinitions
     {
 
         private readonly Calculator _calculator = new Calculator();
-        private int _result;
+        private double _result;
 
         [Given("the first number is (.*)")]
-        public void GivenTheFirstNumberIs(int number)
+        public void GivenTheFirstNumberIs(double number)
         {
             _calculator.FirstNumber = number;
         }
 
         [Given("the second number is (.*)")]
-        public void GivenTheSecondNumberIs(int number)
+        public void GivenTheSecondNumberIs(double number)
         {
             _calculator.SecondNumber = number;
         }
@@ -31,8 +31,14 @@ namespace SpecFlowCalculator.Specs.StepDefinitions
             _result = _calculator.Subtract();
         }
 
+        [When("the two numbers are divided")]
+        public void WhenTheTwoNumbersAreDivided()
+        {
+            _result = _calculator.Divide();
+        }
+
         [Then("the result should be (.*)")]
-        public void ThenTheResultShouldBe(int result)
+        public void ThenTheResultShouldBe(double result)
         {
             _result.Should().Be(result);
         }
