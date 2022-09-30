@@ -14,11 +14,11 @@ Scenario Outline: Add two numbers
 
 Examples:
 	| First number	| Second number | Expected result |
-	| 0				| 0				| 0               |
-	| -1			| 2				| 1               |
-	| 1				| -2			| -1              |
-	| 2.5			| 2.5           | 5               |
-	| 10			| 12.5          | 22.5            |
+	| 0		| 0		| 0               |
+	| -1		| 2		| 1               |
+	| 1		| -2		| -1              |
+	| 2.5		| 2.5           | 5               |
+	| 10		| 12.5          | 22.5            |
 
 @subtract
 Scenario Outline: Subtract two numbers
@@ -37,11 +37,11 @@ Scenario Outline: Divide two numbers
 
 Examples:
 	| First number	| Second number | Expected result |
-	| 0				| 0				| NaN             |
-	| 10			| 2				| 5               |
-	| -10			| 2				| -5              |
-	| -10			| -2			| 5               |
-	| 15			| 2				| 7.5			  |
+	| 0		| 0		| NaN             |
+	| 10		| 2		| 5               |
+	| -10		| 2		| -5              |
+	| -10		| -2		| 5               |
+	| 15		| 2		| 7.5		  |
 
 @multiply
 Scenario: Multiply two numbers
